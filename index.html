@@ -2,70 +2,118 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wexy Legal</title>
+
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 600px;
-      margin: 60px auto;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #fff6ed, #ffffff);
+      color: #1a1a1a;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 80px auto;
       padding: 0 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      color: #ef7b00;
       text-align: center;
-      font-size: 2.5em; /* увеличенный размер заголовка */
-      margin-bottom: 30px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ef7b00;
+      letter-spacing: -1px;
     }
-    li + li {
-      margin-top: 10px;
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.1em;
     }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
     a {
       text-decoration: none;
-      color: #0066cc;
-      font-weight: bold;
+      color: inherit;
+      display: block;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .title {
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    .desc {
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .footer strong {
+      color: #444;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2em;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>Wexy Legal</h1>
+  <div class="container">
+    <h1>Wexy</h1>
+    <div class="subtitle">
+      Юридическая информация сервиса
+    </div>
 
-  <p>
-    Эта страница содержит юридическую информацию сервиса <strong>Wexy</strong>:
-    условия использования, политику конфиденциальности и порядок удаления аккаунта.
-  </p>
+    <a href="terms_of_service.html">
+      <div class="card">
+        <div class="title">Условия использования</div>
+        <div class="desc">Правила использования приложения Wexy</div>
+      </div>
+    </a>
 
-  <p>
-    Документы относятся к мобильному приложению Wexy.
-  </p>
+    <a href="privacy_policy.html">
+      <div class="card">
+        <div class="title">Политика конфиденциальности</div>
+        <div class="desc">Как мы собираем и защищаем ваши данные</div>
+      </div>
+    </a>
 
-  <ul>
-    <li>
-      <a href="terms_of_service.html">
-        Условия использования (Terms of Service)
-      </a>
-    </li>
-    <li>
-      <a href="privacy_policy.html">
-        Политика конфиденциальности (Privacy Policy)
-      </a>
-    </li>
-    <li>
-      <a href="account_deletion.html">
-        Удаление аккаунта (Account Deletion)
-      </a>
-    </li>
-  </ul>
+    <a href="account_deletion.html">
+      <div class="card">
+        <div class="title">Удаление аккаунта</div>
+        <div class="desc">Как удалить аккаунт и данные</div>
+      </div>
+    </a>
 
-  <p>
-    Контакты: support@wexy.kz • +7 700 244 68 31
-  </p>
+    <div class="footer">
+      <strong>Wexy</strong><br>
+      support@wexy.kz • +7 700 244 68 31
+    </div>
+  </div>
 </body>
 </html>
